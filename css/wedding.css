@@ -1,0 +1,257 @@
+*{margin:0; padding:0; box-sizing: border-box;}
+
+#layout {
+    max-width: 1200px;  
+    height: 1000px;  
+}
+
+img { display:block;}
+
+a.nanum-gothic-regular {
+    font-family: "Nanum Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+       
+}
+
+p.nanum-gothic-regular {
+    font-family: "Nanum Gothic", serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+a {
+    text-decoration: none;
+    color:#222328;
+    font-size: 10pt;
+    line-height: 180%;
+    list-style: none; 
+}
+
+main { 
+    display:flex;
+}
+
+/* left 영역 */
+#left { 
+    flex:1;
+}
+
+#left a img {
+    width:300px;
+    height: 200px;
+    padding:15%;
+}
+
+#left nav ul li a {
+padding-left: 5%;
+margin-top:0.05em;
+}
+
+#left>nav ul li nav {
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+#left ul>li:hover > nav {
+    height: 150px;
+    /* overflow: visible; */
+}
+
+.mainMenu{
+    background: #e08a9b;
+    font-weight: bold;
+    color:white;
+    display:block;
+    height: 50px;
+}
+
+.mainMenu:hover {
+    background: #db3d84;
+}  
+
+.subMenu{
+    background: #e9f2c1;
+    display:block;
+    height: 50px;
+    overflow: hidden;
+}
+
+.subMenu:hover{
+    background: #a0c322;
+}
+
+
+/* right 영역 */
+#right {
+    flex:10;
+}
+
+#slideArea {
+    
+    overflow: hidden;      
+}
+
+#slide {
+    width:300%;
+    height: 400px;    
+    display:flex;
+    position:relative;
+    left:0px;    
+}
+
+#slide img{
+    width:100%;    
+}
+
+
+/* notigal영역 */
+
+#notigal { 
+    display:flex;
+    margin-top:5%; 
+    margin-left:3%;
+}
+
+#notice { 
+    flex:1;
+}
+
+#notiline { 
+    border:1px solid black;
+}
+
+#notice h2{ 
+    background:#c3d680;
+    display:inline-block;
+    border:1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 10pt;
+    padding:10px;
+}
+
+#galline { 
+    border:1px solid black;
+}
+
+#notice ul li{ 
+    list-style: none;
+}
+
+#notice ul li span{ 
+    float: right;
+}
+
+#gallery { 
+    flex:1.2;
+    margin-left: 5%;     
+}
+
+#gallery h2 {
+    background:#c3d680;
+    display:inline-block;
+    border:1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 10pt;
+    padding:10px;
+}
+
+
+#gallery div a img {
+    display:inline-block;
+    padding-top:5px;    
+    
+}
+
+#gallery div:last-child{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#banner { 
+    flex:0.8;
+    margin-left: 5%;
+    width:50%;
+}
+
+#banner img { width:100%; }
+
+
+footer { 
+    display:flex;
+    border:3px solid rgb(207, 196, 196);
+    position:relative;
+    height: 15%;
+    margin-top: 3%;
+}
+
+footer>div {
+    flex:1;
+}
+
+footer div:last-child {
+    flex:10;
+}
+
+footer img { 
+    width:300px;
+    border-right:3px dashed rgb(207, 196, 196);
+    display:block;    
+    height: fit-content;    
+    padding:30px 50px 30px 50px;
+}
+
+footer>div>a>img {    
+    height: 100%;
+}
+
+footer section {    
+    display:block;
+    width:100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #sec1 { 
+    border-bottom:3px dashed  rgb(207, 196, 196);     
+    align-content: center;
+}
+
+footer #sec1 a{
+    margin-left:3%;
+}
+
+footer #sec2 {         
+    align-content: center;
+    margin-left:3%;
+}
+
+
+#popup { 
+    margin-top:2%;
+    display: none;
+    position:absolute;
+    top:0;
+    text-align: center;
+    background-color: white;
+    width:50%;
+    margin-left: 300px;
+    padding:50px;
+}
+
+#popup img{
+    width:100%;    
+}
+
+#popup button { 
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-style: none;
+    padding:20px;
+}
